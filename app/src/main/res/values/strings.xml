@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">OkHttpJavaDemo</string>
+    <string name="button_kotlin_synchronous_get">KotlinSynchronousGet</string>
+    <string name="button_kotlin_asynchronous_get">KotlinAsynchronousGet</string>
+    <string name="button_kotlin_accessing_headers">KotlinAccessingHeaders</string>
+    <string name="button_kotlin_posting_string">KotlinPostingString</string>
+    <string name="button_kotlin_post_streaming">KotlinPostStreaming</string>
+    <string name="button_kotlin_post_file">KotlinPostFile</string>
+    <string name="button_kotlin_posting_form_parameters">KotlinPostFromParameters</string>
+    <string name="button_kotlin_post_multipart_request">KotlinPostingMultipartRequest</string>
+    <string name="button_kotlin_pares_JSON_with_moshi">KotlinParseJSONResponseWithMoshi</string>
+    <string name="button_kotlin_response_caching">KotlinResponseCaching</string>
+    <string name="button_kotlin_canceling_call">KotlinCancelingCall</string>
+    <string name="button_kotlin_timeouts">KotlinTimeouts</string>
+    <string name="button_kotlin_per_call_configuration">KotlinPer-callConfiguration</string>
+    <string name="button_kotlin_handling_authentication">KotlinHandlingAuthentication</string>
+
+    <string name="button_java_synchronous_get">JavaSynchronousGet</string>
+    <string name="button_java_asynchronous_get">JavaAsynchronousGet</string>
+    <string name="button_java_accessing_headers">JavaAccessingHeaders</string>
+    <string name="button_java_posting_string">JavaPostingString</string>
+    <string name="button_java_post_streaming">JavaPostStreaming</string>
+    <string name="button_java_post_file">JavaPostFile</string>
+    <string name="button_java_posting_form_parameters">JavaPostFromParameters</string>
+    <string name="button_java_post_multipart_request">JavaPostingMultipartRequest</string>
+    <string name="button_java_pares_JSON_with_moshi">JavaParseJSONResponseWithMoshi</string>
+    <string name="button_java_response_caching">JavaResponseCaching</string>
+    <string name="button_java_canceling_call">JavaCancelingCall</string>
+    <string name="button_java_timeouts">JavaTimeouts</string>
+    <string name="button_java_per_call_configuration">JavaPer-callConfiguration</string>
+    <string name="button_java_handling_authentication">JavaHandlingAuthentication</string>
+    <string name="button_clear">Clear</string>
+</resources>

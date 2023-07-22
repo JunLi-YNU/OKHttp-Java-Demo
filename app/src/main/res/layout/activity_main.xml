@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <Button
+        android:id="@+id/button_kotlin_synchronous_get"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:gravity="left|center_vertical"
+        android:text="@string/button_kotlin_synchronous_get"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_java_synchronous_get"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:gravity="start|center_vertical"
+        android:text="@string/button_java_synchronous_get"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button_kotlin_synchronous_get"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/button_kotlin_synchronous_get" />
+
+
+
+    <Button
+        android:id="@+id/button_kotlin_asynchronous_get"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_kotlin_asynchronous_get"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:gravity="start|center_vertical"
+        app:layout_constraintEnd_toEndOf="@+id/button_kotlin_synchronous_get"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button_kotlin_synchronous_get"
+        app:layout_constraintTop_toBottomOf="@+id/button_kotlin_synchronous_get" />
+
+    <Button
+        android:id="@+id/button_java_asynchronous_get"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_java_asynchronous_get"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:gravity="start|center_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/button_kotlin_asynchronous_get"
+        app:layout_constraintEnd_toEndOf="@+id/button_java_synchronous_get"
+        app:layout_constraintStart_toStartOf="@+id/button_java_synchronous_get"
+        app:layout_constraintTop_toTopOf="@+id/button_kotlin_asynchronous_get" />
+
+    <Button
+        android:id="@+id/button_kotlin_accessing_headers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_kotlin_accessing_headers"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:gravity="start|center_vertical"
+        app:layout_constraintEnd_toEndOf="@+id/button_kotlin_synchronous_get"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button_kotlin_synchronous_get"
+        app:layout_constraintTop_toBottomOf="@+id/button_kotlin_asynchronous_get" />
+
+    <Button
+        android:id="@+id/button_java_accessing_headers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_java_accessing_headers"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:gravity="start|center_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/button_kotlin_accessing_headers"
+        app:layout_constraintEnd_toEndOf="@+id/button_java_synchronous_get"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button_java_synchronous_get"
+        app:layout_constraintTop_toTopOf="@+id/button_kotlin_accessing_headers" />
+
+    <Button
+        android:id="@+id/button_kotlin_posting_string"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_kotlin_posting_string"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:gravity="start|center_vertical"
+        app:layout_constraintEnd_toEndOf="@+id/button_kotlin_synchronous_get"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/button_kotlin_synchronous_get"
+        app:layout_constraintTop_toBottomOf="@+id/button_kotlin_accessing_headers" />
+
+    <Button
+        android:id="@+id/button_java_posting_string"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_java_posting_string"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:gravity="start|center_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/button_kotlin_posting_string"
+        app:layout_constraintEnd_toEndOf="@+id/button_java_synchronous_get"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button_java_synchronous_get"
+        app:layout_constraintTop_toTopOf="@+id/button_kotlin_posting_string" />
+
+    <Button
+        android:id="@+id/button_kotlin_post_streaming"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_kotlin_post_streaming"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:gravity="start|center_vertical"
+        app:layout_constraintEnd_toEndOf="@+id/button_kotlin_synchronous_get"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/button_kotlin_synchronous_get"
+        app:layout_constraintTop_toBottomOf="@+id/button_kotlin_posting_string" />
+    <Button
+        android:id="@+id/button_java_post_streaming"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_java_post_streaming"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:gravity="start|center_vertical"
+        app:layout_constraintTop_toTopOf="@+id/button_kotlin_post_streaming"
+        app:layout_constraintBottom_toBottomOf="@+id/button_kotlin_post_streaming"
+        app:layout_constraintStart_toStartOf="@+id/button_java_synchronous_get"
+        app:layout_constraintEnd_toEndOf="@+id/button_java_synchronous_get"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button_kotlin_post_file"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_kotlin_post_file"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:gravity="start|center_vertical"
+        app:layout_constraintStart_toStartOf="@+id/button_kotlin_synchronous_get"
+        app:layout_constraintEnd_toEndOf="@+id/button_kotlin_synchronous_get"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/button_kotlin_post_streaming" />
+
+
+    <Button
+        android:id="@+id/button_java_post_file"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_java_post_file"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:gravity="start|center_vertical"
+        app:layout_constraintTop_toTopOf="@+id/button_kotlin_post_file"
+        app:layout_constraintBottom_toBottomOf="@+id/button_kotlin_post_file"
+        app:layout_constraintStart_toStartOf="@+id/button_java_synchronous_get"
+        app:layout_constraintEnd_toEndOf="@id/button_java_synchronous_get"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button_kotlin_posting_form_parameters"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_kotlin_posting_form_parameters"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:gravity="start|center_vertical"
+        app:layout_constraintEnd_toEndOf="@+id/button_kotlin_synchronous_get"
+        app:layout_constraintStart_toStartOf="@+id/button_kotlin_synchronous_get"
+        app:layout_constraintTop_toBottomOf="@+id/button_kotlin_post_file" />
+
+    <Button
+        android:id="@+id/button_java_posting_form_parameters"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_java_posting_form_parameters"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:gravity="start|center_vertical"
+        app:layout_constraintTop_toTopOf="@+id/button_kotlin_posting_form_parameters"
+        app:layout_constraintBottom_toBottomOf="@+id/button_kotlin_posting_form_parameters"
+        app:layout_constraintStart_toStartOf="@+id/button_java_synchronous_get"
+        app:layout_constraintEnd_toEndOf="@+id/button_java_synchronous_get" />
+
+    <Button
+        android:id="@+id/button_clear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_clear"
+        android:textSize="12sp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_kotlin_posting_form_parameters" />
+    <TextView
+        android:id="@+id/textView_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="10sp"
+        app:layout_constraintTop_toBottomOf="@+id/button_clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
